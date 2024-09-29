@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашні вправи до лекції 3</title>
 
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Підключення css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Підключення css/base.css через @import -->
+    <style>
+        @import url('css/base.css');
+    </style>
+
+    <!-- Додайте тут елемент style -->
+    <style>
+        p {
+            color: red; /* Визначено колір тексту для селектора p */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Додайте тут елемент p з атрибутом style -->
+    <p style="color: blue;">This is my paragraph.</p>
+
+    <!-- Пояснення:
+        Колір тексту буде синім (color: blue;), 
+        оскільки inline-стилі мають вищий пріоритет, ніж стилі, визначені всередині тегу <style>.
+    -->
+
+    <!-- Виправлені абзаци та div -->
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+
+    <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>
+
+    <div class="exciting">The most exciting div on the page. One of a kind!</div>
+
+    <style>
+        #exciting {
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+
+        .exciting {
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+    </style>
+
+    <!-- CSS змінна --bgColor для div та p -->
+    <style>
+        body {
+            background: var(--bgColor); /* Фон не зміниться, оскільки змінна --bgColor недоступна */
+        }
+
+        div {
+            --bgColor: limegreen;
+        }
+
+        p {
+            background: var(--bgColor); /* Змінна буде доступною тільки всередині div */
+        }
+    </style>
+
+    <div>
+        <h3>Div 1</h3>
+        <p>Paragraph 1</p>
+    </div>
+
+    <div>
+        <h3>Div 2</h3>
+        <p>Paragraph 2</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h2>About</h2>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">eBooks</a></li>
+                <li><a href="#">Webinars</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Advertise</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer legal -->
+        <section class="legal">
+            <ul>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p>&copy; 2024 Copyright Shopaholic Inc.</p>
+        </section>
+    </footer>
+
+</body>
+</html>
