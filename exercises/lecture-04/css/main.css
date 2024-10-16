@@ -1,0 +1,60 @@
+/* Шрифти та базові стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* базовий розмір шрифта = 100% */
+}
+
+/* Стилі для заголовків */
+h1, h2, h3 {
+    color: grey; /* сірий колір для всіх h1, h2, h3 */
+    font-weight: 700; /* жирність 700 */
+}
+
+h1 {
+    font-size: 1.45rem; /* збільшений на 140% */
+}
+
+h2 {
+    font-size: 1.3rem; /* збільшений на 130% */
+}
+
+/* Стилі для елемента main */
+#main {
+    color: #e60202; /* колір тексту червоний */
+}
+
+/* Стилі для класів */
+.h2 {
+    color: red; /* червоний колір */
+}
+
+.heading {
+    color: green; /* зелений колір для класу heading */
+}
+
+/* Стилі для div та span */
+div {
+    font-size: 1.6em; /* 16px * 1.6 = 25.6px */
+}
+
+span {
+    font-size: 1.6em; /* 25.6px * 1.6 = 40.96px для внутрішнього span */
+}
+
+/* Стиль для strong */
+strong {
+    font-size: 1.6em; /* 16px * 1.6 = 25.6px */
+}
+
+/* Стиль для списків */
+.list-unstyled {
+    list-style: none; /* Вимкнення маркерів у списку */
+}
+
+/* Стиль для соціальних іконок */
+.footer-social {
+    margin-top: 20px;
+}
+
+/* Імпорт Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
