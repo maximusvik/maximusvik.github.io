@@ -1,1 +1,82 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+}
+
+.nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Вирівнює елементи по горизонталі */
+  align-items: center; /* Вирівнює елементи по вертикалі */
+  padding: 0 .5rem;
+}
+
+.link-list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  padding: .5rem;
+}
+
+.link:hover {
+  background-color: #777;
+}
+
+.link a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between; /* Розподіляє простір між елементами */
+  width: 700px;
+}
+
+.item-blue {
+  background-color: blue;
+}
+
+.item-orange {
+  background-color: orange;  
+}
+
+.item-green {
+  background-color: green;
+}
+
+.item {
+  color: white;
+  width: 100%; /* Встановлює ширину елемента */
+}
+
+.grow-wrapper {
+  display: flex;
+  width: 700px;
+}
+
+.item-blue {
+  flex-grow: 3; /* Фактор зростання для синього елемента */
+}
+
+.item-orange, .item-green {
+  flex-grow: 1; /* Фактор зростання для оранжевого і зеленого елементів */
+}
+
+.flexbox {
+  --min: 30ch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1 1 var(--min); /* Пропорційно ділять доступний простір */
+}
