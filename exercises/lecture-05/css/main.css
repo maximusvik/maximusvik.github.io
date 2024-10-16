@@ -1,1 +1,33 @@
+/* Глобальні стилі для body */
+.body {
+  background: linear-gradient(to right, lightgreen 5%, lightgreen 17%, green 40%, darkgreen 85%, darkgreen 95%);
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 20px;
+}
 
+/* Стиль для класу percents */
+.percents {
+  background: linear-gradient(to bottom, lightgreen 2em, green 4em, darkgreen 8em, lightgreen 16em, green 32em, darkgreen 64em, lightgreen 128em);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/* Стиль для класу negative */
+.negative {
+  background: linear-gradient(to left, lightblue -50%, lightblue -10%, skyblue 0%, darkblue 100%, navy 150%);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/* Стиль для класу radial */
+.radial {
+  background: 
+      radial-gradient(ellipse at top, orange, transparent),
+      radial-gradient(ellipse at bottom, red, transparent);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
