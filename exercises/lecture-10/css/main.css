@@ -1,1 +1,28 @@
+* {
+  margin: 0;
+}
 
+body, html {
+height: 100%;
+}
+
+.box {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2rem;
+}
+
+/* Масштабування елемента у 10 разів */
+.scale-element {
+background-color: #0074d9;
+height: 20px;
+width: 20px;
+font-size: 1px;
+padding: 1px;
+color: white;
+line-height: 2px;
+transform: scale(10);
+}
+
+/* Нахил елем

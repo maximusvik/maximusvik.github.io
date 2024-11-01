@@ -1,1 +1,51 @@
+* {
+  margin: 0;
+}
 
+body {
+  color: #000;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  padding: 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+      'header header header'
+      'sidebar main main'
+      'footer footer footer';
+}
+
+/* Адаптивний розмір шрифту */
+body, .header, .main, .sidebar, .footer {
+  font-size: clamp(16px, calc(1.25vw + 14px), 48px);
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-areas:
+          'header'
+          'main'
+          'sidebar'
+          'footer';
+  }
+}
