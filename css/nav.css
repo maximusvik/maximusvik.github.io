@@ -1,0 +1,20 @@
+/* nav.css */
+
+.nav {
+  /* max-width: 160px; */
+  /* max-width: 50%; */
+  min-width: 16em;
+  /* min-width: none; */
+
+  background-color: rgb(231, 242, 255);
+}
+
+.nav {
+  min-width: 16em;
+  & li {
+    list-style: none;
+    & a {
+      text-decoration: none;
+    }
+  }
+}

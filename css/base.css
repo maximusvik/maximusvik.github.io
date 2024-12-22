@@ -1,0 +1,19 @@
+/* base.css */
+
+/* root */
+html {
+ /* --accentColor: red; */
+
+  --accentColor: rgb(27, 22, 175); 
+  --accentColor: hsl(253, 100%, 50%); 
+  --accentColorMuted: hsl(253, 40%, 40%);
+  
+  }
+
+  body {
+    color: hsl(0, 0%, 25%);
+  }
+
+  a {
+    color: var(--accentColorMuted);
+  }
